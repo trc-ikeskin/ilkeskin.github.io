@@ -15,4 +15,10 @@ div {
   border-radius: 5px;
   height: 150px;
 }
+
+@media (max-width: 430px) {
+  div {
+    display: none;
+  }
+}
 </style>

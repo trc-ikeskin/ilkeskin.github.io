@@ -5,9 +5,9 @@ import Social from "./components/Socials.vue";
 </script>
 
 <template>
-  <Social :socials="socials" />
-  <VerticalLine />
   <Logo />
+  <VerticalLine />
+  <Social :socials="socials" />
 </template>
 
 <script>
