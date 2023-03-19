@@ -38,7 +38,7 @@ div {
 }
 
 svg {
-  fill: #252422;
+  fill: var(--fg-color);
 }
 
 text {

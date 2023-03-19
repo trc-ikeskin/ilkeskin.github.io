@@ -2,19 +2,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter");
 
 :root {
+  --fg-color: #252422;
+  --bg-color: #fffcf2;
+  --alt-color: #eb5e28;
+
+  color-scheme: light dark;
+  color: var(--fg-color);
+  background-color: var(--bg-color);
+
   font-family: Inter, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: #252422;
-  background-color: #fffcf2;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-dark-interface) {
+  :root {
+    --fg-color: #fffcf2;
+    --bg-color: #252422;
+    --alt-color: #eb5e28;
+  }
 }
 
 body {
@@ -30,7 +41,7 @@ a {
 }
 
 a:hover {
-  color: #eb5e28;
+  color: var(--alt-color);
   text-decoration: none;
   cursor: pointer;
 }
