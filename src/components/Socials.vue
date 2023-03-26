@@ -4,7 +4,7 @@
       <li v-for="{ icon, link, text } in socials">
         <a :href="link">
           <span>{{ text }}</span>
-          <font-awesome-icon :icon="'fa-brands fa-' + icon" />
+          <font-awesome-icon :icon="[icon.family, icon.name]" />
         </a>
       </li>
     </ul>
@@ -20,7 +20,7 @@ export default {
       Object >
       {
         text: String,
-        icon: String,
+        icon: Object,
         link: String,
       },
   },
@@ -53,7 +53,8 @@ span {
     align-items: center;
     justify-content: start;
     flex-direction: row-reverse;
-    padding-left: 32px; /* align with text in logo */
+    padding-left: 32px;
+    /* align with text in logo */
   }
 }
 </style>

@@ -12,7 +12,8 @@ import {
   faSquareXing,
   faSquareTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import { faCertificate } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faLinkedin, faSquareXing, faSquareTwitter);
+library.add(faLinkedin, faSquareXing, faSquareTwitter, faCertificate);
 
 createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");
