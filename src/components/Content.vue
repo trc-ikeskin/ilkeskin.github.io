@@ -1,14 +1,16 @@
 <script setup>
 import Logo from "./Logo.vue";
 import VerticalLine from "./VerticalLine.vue";
-import Social from "./Socials.vue";
+import MenuItem from "./MenuItem.vue";
 </script>
 
 <template>
-  <div class="container">
-    <Logo />
-    <VerticalLine />
-    <Social :socials="socials" />
+  <div>
+    <div class="container">
+      <Logo />
+      <VerticalLine />
+      <MenuItem :item="items" />
+    </div>
   </div>
 </template>
 
@@ -16,7 +18,7 @@ import Social from "./Socials.vue";
 export default {
   data() {
     return {
-      socials: [
+      items: [
         {
           text: "LinkedIn",
           icon: { family: "fab", name: "linkedin" },

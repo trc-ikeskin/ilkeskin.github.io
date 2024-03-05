@@ -1,10 +1,10 @@
 <template>
   <div style="flex-direction: column">
     <ul>
-      <li v-for="{ icon, link, text } in socials">
+      <li v-for="{ icon, link, text } in item">
         <a :href="link">
           <span>{{ text }}</span>
-          <font-awesome-icon :icon="[icon.family, icon.name]" />
+          <i><font-awesome-icon :icon="[icon.family, icon.name]" /></i>
         </a>
       </li>
     </ul>
@@ -13,12 +13,10 @@
 
 <script>
 export default {
-  name: "Socials",
+  name: "MenuItem",
   props: {
-    socials:
-      Array <
-      Object >
-      {
+    item:
+      Array < Object > {
         text: String,
         icon: Object,
         link: String,
@@ -45,6 +43,13 @@ a {
 
 span {
   padding-inline: 0.5rem;
+}
+
+i {
+  width: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 430px) {
