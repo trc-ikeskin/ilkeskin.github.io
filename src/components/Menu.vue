@@ -1,7 +1,7 @@
 <template>
   <div style="flex-direction: column">
     <ul>
-      <li v-for="{ icon, link, text } in item">
+      <li v-for="{ icon, link, text } in items">
         <a :href="link">
           <span>{{ text }}</span>
           <i><font-awesome-icon :icon="[icon.family, icon.name]" /></i>
@@ -13,10 +13,10 @@
 
 <script>
 export default {
-  name: "MenuItem",
+  name: "Menu",
   props: {
-    item:
-      Array < Object > {
+    items:
+      Array <Object> {
         text: String,
         icon: Object,
         link: String,
