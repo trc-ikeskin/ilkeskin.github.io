@@ -1,17 +1,17 @@
 <script setup>
 import Logo from "./Logo.vue";
 import VerticalLine from "./VerticalLine.vue";
-import MenuItem from "./MenuItem.vue";
+import Menu from "./Menu.vue";
+import Resume from "../assets/docs/cv.md";
 </script>
 
 <template>
-  <div>
-    <div class="container">
-      <Logo />
-      <VerticalLine />
-      <MenuItem :item="items" />
-    </div>
+  <div class="container">
+    <Logo />
+    <VerticalLine />
+    <Menu :items="items" />
   </div>
+  <Resume />
 </template>
 
 <script>
@@ -59,4 +59,4 @@ export default {
     min-width: 0;
   }
 }
-</style>
+</style>./Menu.vue
