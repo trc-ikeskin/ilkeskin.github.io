@@ -2,7 +2,6 @@
 import Logo from "./Logo.vue";
 import VerticalLine from "./VerticalLine.vue";
 import Menu from "./Menu.vue";
-import Resume from "../assets/docs/cv.md";
 </script>
 
 <template>
