@@ -7,13 +7,9 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 /* import font awesome icon component */
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 /* import specific icons */
-import {
-  faLinkedin,
-  faSquareXing,
-  faSquareTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faSquareXing } from "@fortawesome/free-brands-svg-icons";
 import { faCertificate } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faLinkedin, faSquareXing, faSquareTwitter, faCertificate);
+library.add(faLinkedin, faSquareXing, faCertificate);
 
-createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");
+createApp(App).component("FontAwesomeIcon", FontAwesomeIcon).mount("#app");
