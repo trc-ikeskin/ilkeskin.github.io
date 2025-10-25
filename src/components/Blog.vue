@@ -28,4 +28,48 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.blog-container {
+    display: flex;
+    width: 100%;
+    column-gap: 2rem;
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 4px solid var(--fg-color);
+    border-radius: 5px;
+    padding: 1rem;
+    width: 40rem;
+}
+
+.blog-card img {
+    height: 10em;
+    width: 10em;
+    object-fit: cover;
+    filter: opacity(75%) blur(1px) saturate(0%);
+}
+
+.blog-card > hgroup {
+    i {
+        width: 10em;
+    }
+
+    h2 {
+        margin: 0px auto;
+        text-align: right;
+    }
+}
+
+.blog-card footer {
+    display: inline-flex;
+    justify-content: space-around;
+
+    a {
+        text-decoration: underline;
+        text-decoration-style: dotted;
+    }
+}
+</style>
