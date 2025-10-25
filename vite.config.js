@@ -6,6 +6,14 @@ import { plugin as mdPlugin, Mode } from "vite-plugin-markdown";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+    resolve: {
+        alias: [
+            {
+                find: "@",
+                replacement: path.resolve(__dirname, "src"),
+            },
+        ],
+    },
     plugins: [
         Vue({
             include: [/\.vue$/],
