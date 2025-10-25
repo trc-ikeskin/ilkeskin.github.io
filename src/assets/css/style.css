@@ -2,64 +2,64 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter");
 
 :root {
-  --fg-color: #252422;
-  --bg-color: #fffcf2;
-  --alt-color: #eb5e28;
+    --fg-color: #252422;
+    --bg-color: #fffcf2;
+    --alt-color: #eb5e28;
 
-  color-scheme: light dark;
-  color: var(--fg-color);
-  background-color: var(--bg-color);
+    color-scheme: light dark;
+    color: var(--fg-color);
+    background-color: var(--bg-color);
 
-  font-family: Inter, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+    font-family: Inter, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
 }
 
 @media (prefers-dark-interface) {
-  :root {
-    --fg-color: #fffcf2;
-    --bg-color: #252422;
-    --alt-color: #eb5e28;
-  }
+    :root {
+        --fg-color: #fffcf2;
+        --bg-color: #252422;
+        --alt-color: #eb5e28;
+    }
 }
 
 body {
-  margin: 0;
-  display: flex;
-  min-width: 320px;
-  min-height: 100vh;
+    margin: 0;
+    display: flex;
+    min-width: 320px;
+    min-height: 100vh;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 a:hover {
-  color: var(--alt-color);
-  text-decoration: none;
-  cursor: pointer;
+    color: var(--alt-color);
+    text-decoration: none;
+    cursor: pointer;
 }
 
 #app {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 auto;
-  align-items: center;
-  justify-content: space-around;
-  min-width: 600px;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 600px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 @media (max-width: 430px) {
-  #app {
-    min-width: 0;
-  }
+    #app {
+        min-width: 0;
+    }
 }
