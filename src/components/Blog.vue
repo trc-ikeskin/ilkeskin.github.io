@@ -25,44 +25,52 @@ export default {
 .blog-container {
     display: flex;
     width: 100%;
-    column-gap: 2rem;
+    justify-content: space-around;
 }
 
 .blog-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     border: 4px solid var(--fg-color);
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 1rem;
-    width: 40rem;
+    width: 16rem;
+    height: 25rem;
+    box-sizing: border-box;
+}
+
+.blog-card:hover {
+    border: 4px solid var(--alt-color);
+    cursor: pointer;
+}
+
+.blog-card h2 {
+    flex: 1;
+    text-align: right;
+    margin: 0;
 }
 
 .blog-card img {
-    height: 10em;
-    width: 10em;
-    object-fit: cover;
-    filter: opacity(75%) blur(1px) saturate(0%);
+    flex: 4;
+    padding: 1rem;
+    object-fit: contain;
+    filter: grayscale();
 }
 
-.blog-card > hgroup {
-    i {
-        width: 10em;
-    }
-
-    h2 {
-        margin: 0px auto;
-        text-align: right;
-    }
+.blog-card p {
+    flex: 3;
+    margin: 0;
+    text-overflow: ellipsis;
 }
 
 .blog-card footer {
-    display: inline-flex;
+    flex: 2;
+    display: flex;
     justify-content: space-around;
+    margin-top: auto;
+}
 
-    a {
-        text-decoration: underline;
-        text-decoration-style: dotted;
-    }
+.blog-card footer a {
+    text-decoration: underline dotted;
 }
 </style>
