@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192" role="img">
+  <!--
+    Mask: white = visible, black = hidden.
+    We draw a white rectangle then the black text on top so the text becomes transparent
+    when the mask is applied to the colored rect.
+  -->
+  <mask id="cutout">
+    <rect width="100%" height="100%" fill="white"/>
+    <text
+      dx="0.45em"
+      dy="0.65em"
+      text-anchor="middle"
+      dominant-baseline="middle"
+      font-family="Oswald, sans-serif"
+      font-weight="800"
+      font-size="180"
+      fill="black"
+      letter-spacing="-15"
+    >ik</text>
+  </mask>
+
+  <!-- Colored box using the mask so letters are transparent -->
+  <rect width="100%" height="100%" rx="16" ry="16" fill="#eb5e28" mask="url(#cutout)"/>
+</svg>
