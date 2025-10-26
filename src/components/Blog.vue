@@ -5,16 +5,9 @@ const docs = Object.values(import.meta.glob("@/assets/docs/*.md", { eager: true,
 <template>
     <div class="blog-container">
         <div class="blog-card" v-for="doc in docs">
-            <hgroup>
-                <a :href="link">
-                    <i><FontAwesomeIcon :icon="['fab', 'opensuse']" /></i>
-                    <h2>{{ doc.title }}</h2>
-                </a>
-                <p>{{ doc.description }}</p>
-            </hgroup>
-            <div>
-                <img :src="doc.image" :alt="doc.title" />
-            </div>
+            <h2>{{ doc.title }}</h2>
+            <img :src="doc.image" :alt="doc.title" />
+            <p>{{ doc.description }}</p>
             <footer>
                 <a v-for="tag in doc.tags">{{ tag }}</a>
             </footer>
